@@ -1,0 +1,251 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+  
+.container {
+  width: 100%;
+  max-width: 1024px; 
+  margin: 0 auto;
+}
+  
+header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: black;
+  padding: 10px 0;
+  text-align: center;
+}
+  
+header .logo {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Honk', system-ui;
+  font-family: 'Protest Revolution', sans-serif;
+}
+  
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  padding-right: 20px;
+}
+  
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  list-style: none;
+  padding: 16px;
+  position: relative;
+}
+  
+main {
+  width: 100%; 
+  margin: auto; 
+}
+
+#sobre {
+  display: relative;
+}
+
+#sobre h1 {
+  display: block;
+  padding: 16px 0 0;
+  border-bottom: 2px solid;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+#sobre img {
+  order: -1;
+  width: 78%; 
+  max-width: auto;
+  height: auto; 
+}
+
+.sobre-texto {
+  display: flex;
+  align-items: center;
+  justify-content: start; 
+  gap: 20px; 
+  margin: auto; 
+  max-width: 1250px; 
+}
+
+#sobre .h1-tablet {
+  display: none;
+}
+
+#sobre, #produtos {
+  width: 1024px;
+  margin-bottom: 40px;
+  text-align: center; 
+}
+
+#produtos h2 {
+  border-bottom: 2px solid;
+}
+
+.produtos {
+  width: 200px;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+}
+  
+.produtos img {
+  width: 100%;
+  max-width: auto;
+  height: auto;
+}
+  
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+  
+button:hover {
+  background-color: #555;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+#sobre {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#sobre .h1-web {
+    width: 100%; 
+    text-align: center; 
+    display: none;
+}
+
+#sobre .h1-tablet {
+    width: 100%;
+    text-align: center; 
+    display: initial;
+}
+
+#sobre .h1-tablet {
+    width: 80%;
+}
+
+.sobre-texto  {
+    width: 100%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+
+.sobre-texto img {
+    padding-top: 12px;
+    width: 100%;
+    max-width: auto; 
+    order: -1; 
+    height: auto; 
+}
+
+.sobre-texto p {
+    width: 80%;
+    text-align: justify; 
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+#produtos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#produtos h2 {
+  width: 80%;
+  text-align: center; 
+  display: initial;
+}
+
+.produtos {
+  width: 80%;
+  width: calc(50% - 20px);
+  margin: 10px; 
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 80%;
+}
+
+}
+
+@media screen and (max-width: 640px) {
+  
+#sobre, #produtos {
+    width: 100%;
+    padding: 0 15px; 
+    box-sizing: border-box; 
+  }
+
+#sobre .h1-web {
+    width: 100%;
+    text-align: center; 
+    display: none;
+}
+
+#sobre .h1-tablet {
+    width: 100%;
+    text-align: center; 
+    display: initial;
+}
+
+.sobre-texto  {
+  width: 100%; 
+  max-width: 640px;
+  margin: auto;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.sobre-texto img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  padding-top: 12px;
+}
+
+  .produtos {
+    width: 100%; 
+    margin-bottom: 20px;
+  }
+
+  
+  .produtos button {
+    width: 80%; 
+    margin-top: 10px;
+  }
+}
