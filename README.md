@@ -20,7 +20,7 @@ O layout se adapta aos seguintes tamanhos de tela:
 
 ### Como usar
 
-- Clone o repositório para sua máquina local usando git clone https://link-para-repositorio.
+- Clone o repositório para sua máquina local usando git clone https://github.com/LeandroCamposDEV/Game-Oasis
 - Abra o arquivo index.html em seu navegador para visualizar o projeto.
  -Redimensione o navegador para ver o layout responsivo em ação.
 
